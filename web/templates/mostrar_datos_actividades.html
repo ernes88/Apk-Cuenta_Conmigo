@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cuenta Conmigo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/unsemantic-grid-responsive.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/mostrarDatos.css">
+</head>
+
+<body>
+
+<!--NAVEGADOR -->
+
+<div class="grid-container">
+    <div class="grid-100 fondo-navegador">
+        <nav class="grid-menu">
+            <ul>
+                <li class="fullWidth">
+                    <a href="/index">
+                        <img class="logo" src="../static/imagenes/logo.svg" alt="Logo de Cuenta Conmigo.">
+                    </a>
+                </li>
+
+                <li class="li">
+                    <a class="navbarlinks" href="/espacioPersonal">ESPACIO <br> PERSONAL</a>
+                </li>
+
+                <li class="li">
+                    <a class="navbarlinks" href="/actividades">ACTIVIDADES</a>
+                </li>
+
+                <li class="li">
+                    <a class="navbarlinks" href="/enfermedades">INFORMACIÓN SOBRE <br> ENFERMEDADES</a>
+                </li>
+
+                <li class="li">
+                    <a class="navbarlinks" href="/sobreCuentaConmigo">SOBRE <br>CUENTA CONMIGO</a>
+                </li>
+
+                <li class="li">
+                    <a href="/crear_usuario">
+                        <img class="icono" src="../static/imagenes/iconoUsuario48px.svg" alt="Icono usuario.">
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</div>
+
+
+<!--TABLA JSON -->
+
+<div class="grid-container">
+    <div class="grid-100 table">
+
+        <table class="grid-table">
+            <thead>
+            <tr>
+                <th scope="col">ID_ACTIVIDADES</th>
+                <th scope="col">TIPO</th>
+                <th scope="col">VALOR</th>
+                <th scope="col">REALIZADA</th>
+                <th scope="col">INTENSIDAD</th>
+
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for registro in registros %}
+
+            <tr>
+                <td>{{registro['ID_ACTIVIDADES']}}</td>
+                <td>{{registro['TIPO']}}</td>
+                <td>{{registro['VALOR']}}</td>
+                <td>{{registro['REALIZADA']}}</td>
+                <td>{{registro['INTENSIDAD']}}</td>
+            </tr>
+
+            {% endfor %}
+
+            </tbody>
+
+
+        </table>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cuenta Conmigo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../static/css/unsemantic-grid-responsive.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/settings.css">
+</head>
+
+<body>
+
+<!--FORMULARIO -->
+
+<div class="grid-container">
+
+    <div class="grid-100">
+
+        <div class="grid-100 settings">
+
+            <img class="logo" src="../static/imagenes/logo.svg" alt="Logo de Cuenta Conmigo.">
+
+            <h2>Configuración: </h2>
+
+            <form>
+
+                <div class="form-group">
+                    <label>Nombre de usuario:<span>*</span>
+                    </label>
+
+                    <div class="form-field">
+                        <input type="text" name="usuario" placeholder="Nombre de usuario" size="40" class="form-control"
+                               required="">
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label>E-mail:<span>*</span>
+                        <div class="form-field">
+                            <input type="email" name="email" placeholder="Correo electronico" size="40"
+                                   class="form-control" required="">
+                        </div>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>Contraseña: <span>*</span></label>
+                    <div class="form-field">
+                        <input type="password" name="pass" placeholder="Contraseña" size="40" class="form-control"
+                               required="">
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <div class="form-field">
+                        <label for="birthday">Fecha de nacimiento: <span>*</span> </label>
+                        <input type="date" id="birthday" name="birthday">
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="genero">Genero:</label>
+                    <br>
+                    <select name="genero" id="genero">
+                        <option value="femenino">Femenino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="binario">Binario</option>
+                        <option value="noBinario">No binario</option>
+                        <option value="noDecir">Prefiero no decir</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <!--OPCION RADIO -->
+                <div class="form-group">
+
+                    <label>¿Sufres de alguna enfermedad mental?</label>
+                    <br>
+                    <input type="radio" checked="checked" name="radio">
+                    <label class="radio" style="background-color:rgba(37, 0, 204, 0)">Si
+
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <input type="radio" name="radio">
+                    <label class="radio" style="background-color:rgba(41, 204, 0, 0)">No
+
+                        <span class="checkmark"></span>
+                    </label>
+
+
+                </div>
+
+
+                <!--BOTON -->
+
+                <p class="textoFormulario">*CUENTA CONMIGO solo guarda datos para una experiencia mas personalizada,
+                    <br>
+                    ninguno de dichos datos seran utilizados fuera del sitio.</p>
+
+                <div class="form-group">
+                    <div>
+                        <input type="submit" value="Guardar cambios"
+                               class="btnSiguiente btnSiguiente-primary btnSiguiente-lg">
+
+                    </div>
+                </div>
+
+
+                <!--BOTON ELIMINAR CUENTA -->
+
+                <a onclick="document.getElementById('id01').style.display='block'">Eliminar cuenta</a>
+
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                          title="Close Modal">×</span>
+
+                    <div class="modal-content" action="/action_page.php">
+                        <div class="container">
+                            <h1>ELIMINAR CUENTA</h1>
+                            <p>¿Seguro que quieres borrar tu cuenta? <br>Toda información ingresada, sera eliminada.
+                                <br>
+                                <b>Esta acción no se puede deshacer.</b></p>
+
+                            <div class="clearfix">
+                                <div class="centrarBotones">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                            class="cancelbtn">Cancelar
+                                    </button>
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                            class="deletebtn">Eliminar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<!--SCRIPT MODAL -->
+
+<script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+
+</script>
+
+
+</body>
+</html>

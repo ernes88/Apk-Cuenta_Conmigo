@@ -1,0 +1,273 @@
+html {
+  overflow-x: hidden;
+  background-image: url(../static/imagenes/fondo_1.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  color: #0A889C;
+  line-height: 30px;
+  font-family: 'Nunito', 'Rubik' , sans-serif;
+  font-weight: lighter;
+      
+}
+
+.logo {
+    display: block;
+    margin-right: auto;
+
+    width: 60%;
+}
+
+/* NAVEGADOR */
+
+.fondo-navegador {
+    background-color: rgb(255, 255, 255);
+
+    width: auto;
+    border-radius: 0 0 10px 10px;
+
+    position: fixed;
+    top: 0;
+
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+.grid-menu ul {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 170px);
+    grid-gap: 10px;
+    justify-items: center;
+
+    list-style: none;
+    margin-top: 10px;
+
+    font-size: 10pt;
+    font-weight: 700;
+    line-height: 12pt;
+}
+
+a {
+    text-decoration: none;
+    color: #2d1026;
+}
+
+.fullWidth {
+    grid-column: 1 / 2;
+    justify-self: start;
+}
+
+.li {
+    margin-top: 10px;
+}
+
+.icono {
+    width: 90%;
+}
+
+/* FORMULARIO */
+
+.formulario {
+    background-color: #FFFFFF;
+    height: 700px;
+    border-radius: 10px;
+
+    color: #0A889C;
+    line-height: 30px;
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: lighter; 
+
+    box-shadow: 0 5px 8px 0 #00000046;
+
+    padding: 0 40px 0 40px;
+    margin: 100px 0 50px 0;
+}
+
+label {
+  margin-left: 10px;  
+  font-weight: bolder;
+  font-size: 12pt;
+}
+  
+select, input {
+    
+  width: 100%;
+  padding: 6px 10px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+    
+  border: 1px solid #C2C2C2;
+  border-radius: 3px;
+  box-sizing: border-box;
+  
+  color: #7c7c7c;
+  font-family: 'Nunito', 'Rubik' , sans-serif;
+  font-weight: lighter;
+  font-size: 10pt;  
+}
+  
+input[type="radio"] {
+  width: auto;
+}
+
+.radio {
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.radio {
+  display: inline-block;
+}
+
+
+
+
+/* FORMULARIO 2 */
+
+.ilu_1 {
+    
+  width: 80%;
+  margin-top: 50px;
+  display: block;
+  margin: 20px auto auto auto;
+  
+}
+
+
+
+.imagenFormulario {
+  margin: 50px 0 50px 0;
+}
+
+h1 {
+  
+  font-weight:normal;
+  font-size: 16pt;
+  font-family: 'Nunito', 'Rubik' , sans-serif;
+
+  margin-top: 50px;
+  margin-bottom: 0px;
+
+  text-align: center;
+
+  padding: 0 100px 0 100px;
+  
+}
+
+.textoFormulario {
+  
+  font-weight:normal;
+  font-size: 8pt;
+  font-family: 'Nunito', 'Rubik' , sans-serif;
+  line-height: 15pt;
+
+  text-align: left;
+
+  margin: 20px 0 20px 0;
+
+  
+}
+
+.textoImagen {
+  font-weight:normal;
+  font-size: 8pt;
+  font-family: 'Nunito', 'Rubik' , sans-serif;
+  line-height: 15pt;
+
+  text-align: center;
+
+  padding: 0 100px 0 100px;
+  margin-top: 20px;
+
+
+}
+
+
+
+
+/* BOTONES */
+
+.btnSiguiente {
+
+  float: right;
+  
+  border-radius: 20px;
+  border-width: 10px;
+  
+  border-color: #ffffff;
+  
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Nunito', 'Rubik' , sans-serif;
+  font-weight: bold;
+  font-size: 8pt;
+  width: 200px;
+
+  box-shadow: 0 5px 8px 0 #00000046;
+  
+
+}
+
+.btnSiguiente.btnSiguiente-lg {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.btnSiguiente.btnSiguiente-primary {
+  background: #047BB1;
+  color: #ffffff;
+}
+
+.btnSiguiente.btnSiguiente-primary:hover, .btnSiguiente.btnSiguiente-primary:active, .btnSiguiente.btnSiguiente-primary:focus {
+  background: #F29697;
+  color: #ffffff;
+}
+
+
+
+
+
+.btnIngresar {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    
+  
+  border-radius: 20px;
+  border-width: 10px;
+  
+  border-color: #ffffff;
+  
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Nunito', 'Rubik' , sans-serif;
+  font-weight: bold;
+  font-size: 8pt;
+  width: 200px;
+
+  box-shadow: 0 5px 8px 0 #00000046;
+  margin-bottom: 0px;
+  
+
+}
+
+.btnIngresar.btnIngresar-lg {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.btnIngresar.btnIngresar-primary {
+  background: #2D1026;
+  color: #ffffff;
+}
+
+.btnIngresar.btnIngresar-primary:hover, .btnIngresar.btnIngresar-primary:active, .btnIngresar.btnIngresar-primary:focus {
+  background: #F29697;
+  color: #ffffff;
+}

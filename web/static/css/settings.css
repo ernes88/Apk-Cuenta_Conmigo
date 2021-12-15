@@ -1,0 +1,365 @@
+/* HTML Y BODY */
+
+html {
+    overflow-x: hidden;
+    background-image: url(../static/imagenes/fondo_2.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  
+    color: #0A889C;
+    line-height: 30px;
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: lighter;
+        
+}
+  
+  
+  
+/* FORMULARIO */
+  
+.logo {
+    display: block;
+    margin: 50px auto 30px auto;
+    
+    
+}
+  
+h2 {
+    
+    color: rgb(255, 109, 133);
+    margin: 20px;
+    text-align: center;
+
+}
+
+.settings {
+    display: block;
+    margin: auto;
+    width: 600px;
+
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border-color: none;
+    padding: 0 40px 0 40px  ;
+    
+}
+
+.formulario {
+    background-color: #FFFFFF;
+    height: 900px;
+    border-radius: 10px;
+  
+    color: #0A889C;
+    line-height: 30px;
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: lighter; 
+  
+    box-shadow: 0 5px 8px 0 #00000046;
+  
+    padding: 0 40px 0 40px;
+    margin: 50px 0 50px 0;
+}
+  
+.textoFormulario {
+  
+    font-weight:normal;
+    font-size: 8pt;
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    line-height: 15pt;
+  
+    text-align: left;
+  
+    margin: 20px 0 20px 0;
+  
+    
+}
+
+label {
+    margin-left: 10px;  
+    font-weight: bolder;
+    font-size: 12pt;
+}
+    
+select, input {
+      
+    width: 100%;
+    padding: 6px 10px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+      
+    border: 1px solid #C2C2C2;
+    border-radius: 3px;
+    box-sizing: border-box;
+    
+    color: #7c7c7c;
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: lighter;
+    font-size: 10pt;  
+}
+    
+input[type="radio"] {
+    width: auto;
+}
+  
+.radio {
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+.radio {
+    display: inline-block;
+}
+
+
+/* BOTONES */
+
+.btnSiguiente {
+
+    display: block;
+    margin: 30px auto 10px auto;
+    
+    border-radius: 20px;
+    border-width: 10px;
+    
+    border-color: #ffffff;
+    
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: bold;
+    font-size: 8pt;
+    width: 200px;
+  
+    box-shadow: 0 5px 8px 0 #00000046;
+    
+  
+}
+  
+.btnSiguiente.btnSiguiente-lg {
+    font-size: 16px;
+    line-height: 1;
+}
+  
+.btnSiguiente.btnSiguiente-primary {
+    background: #F29697;
+    color: #ffffff;
+}
+  
+.btnSiguiente.btnSiguiente-primary:hover, .btnSiguiente.btnSiguiente-primary:active, .btnSiguiente.btnSiguiente-primary:focus {
+    background: #2D1026;
+    color: #ffffff;
+}
+
+
+
+/* CERRAR CUENTA: MODAL Y BOTONES */
+
+a {
+    display: block;
+    color: #2D1026;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    
+}
+  
+a:hover {
+    
+    font-weight: bolder;
+}
+  
+/* ELIMINAR CUENTA MODAL */
+  
+
+h1 {
+    color: rgb(235, 0, 0);
+    margin-top: 20px;
+}
+  
+p {
+    padding: 5px 0 10px 0;
+}
+  
+.centrarBotones {
+    display: flex;
+    padding: 0 300px 0 300px;
+}
+  
+  /* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+    float:inline-end;
+    width: 100%;
+}
+  
+  /* Add a color to the cancel button */
+.cancelbtn {
+    display: block;
+    margin: 10px auto 30px auto;
+
+    background-color: #F29697;
+    color: white;
+      
+    border-radius: 20px;
+    border-width: 10px;
+      
+    border-color: #ffffff;
+      
+    padding: 12px 20px 12px 20px;
+      
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+      
+    width: 250px;
+    
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+.cancelbtn:hover {
+    display: block;
+    margin: 10px auto 30px auto;
+
+    background-color: #e27274;
+    color: white;
+      
+    border-radius: 20px;
+    border-width: 10px;
+      
+    border-color: #ffffff;
+      
+    padding: 12px 20px 12px 20px;
+      
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+      
+    width: 250px;
+    
+    box-shadow: 0 5px 8px 0 #00000046;
+
+}
+  
+/* Add a color to the delete button */
+.deletebtn {
+    display: block;
+    margin: 10px auto 30px auto;
+
+    background-color: #bd0003;
+    color: white;
+      
+    border-radius: 20px;
+    border-width: 10px;
+      
+    border-color: #ffffff;
+      
+    padding: 12px 20px 12px 20px;
+      
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+      
+    width: 250px;
+    
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+.deletebtn:hover {
+    display: block;
+    margin: 10px auto 30px auto;
+
+    background-color: #6e0002;
+    color: white;
+      
+    border-radius: 20px;
+    border-width: 10px;
+      
+    border-color: #ffffff;
+      
+    padding: 12px 20px 12px 20px;
+      
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+      
+    width: 250px;
+    
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+  
+  /* Add padding and center-align text to the container */
+.container {
+    padding: 16px;
+    text-align: center;
+}
+  
+  
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #2d1026cc;
+    padding-top: 50px;
+    
+}
+  
+  /* Modal Content/Box */
+.modal-content {
+    background-color: #ECECEC;
+    margin: 10% auto 10% auto; 
+    border-color: none;
+    border-radius: 10px;
+    width: 80%;
+    
+}
+  
+  
+   
+  /* BOTON X PARA CERRAR MODAL */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    opacity: 0.5;
+}
+  
+.close:hover,
+.close:focus {
+      color: #ffffff;
+      cursor: pointer;
+      opacity: 1;
+
+}
+  
+  
+  /* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+  /* Change styles for cancel button and delete button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .deletebtn {
+       width: 100%;
+    }
+  }
+  
+

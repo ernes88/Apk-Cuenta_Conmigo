@@ -1,0 +1,155 @@
+/* HTML Y BODY */
+
+html {
+    overflow-x: hidden;
+    
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  
+    color: #0A889C;
+    line-height: 30px;
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: lighter;
+        
+}
+
+* {box-sizing: border-box;}
+
+/* ELIMINAR CUENTA */
+a {
+  opacity: 0.8;
+  
+}
+
+a:hover {
+  
+  opacity: 1;
+}
+
+/* ELIMINAR CUENTA MODAL */
+
+h1 {
+    color: #F29697;
+    margin-top: 20px;
+}
+
+p {
+    padding: 5px 0 10px 0;
+    text-align: left;
+}
+
+.centrarBotones {
+    display: flex;
+    padding: 0 300px 0 300px;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float:inline-end;
+  width: 100%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+    display: block;
+    margin: 30px auto 50px auto;
+    
+    border-radius: 20px;
+    border-width: 10px;
+    
+    border-color: #ffffff;
+    
+    padding: 12px 20px 12px 20px;
+    
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: bold;
+    
+    width: 250px;
+  
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+    background-color: firebrick;
+    display: block;
+    margin: 30px auto 50px auto;
+    
+    border-radius: 20px;
+    border-width: 10px;
+    
+    border-color: #ffffff;
+    
+    padding: 12px 20px 12px 20px;
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: bold;
+    
+    width: 250px;
+  
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display:block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 40%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #2d1026cc;
+  padding-top: 50px;
+  
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #ECECEC;
+  margin: 10% auto 10% auto; 
+  border-color: none;
+  border-radius: 10px;
+  width: 80%;
+  
+}
+
+
+ 
+/* BOTON X PARA CERRAR MODAL */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #F29697;
+}
+
+.close:hover,
+.close:focus {
+    color: #2D1026;
+    cursor: pointer;
+}
+
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}

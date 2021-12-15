@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cuenta Conmigo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../static/css/unsemantic-grid-responsive.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/formulario.css">
+</head>
+
+<body>
+
+
+<!--NAVEGADOR -->
+
+<div class="grid-container">
+    <div class="grid-100 fondo-navegador">
+        <nav class="grid-menu">
+            <ul>
+                <li class="fullWidth">
+                    <a href="/index">
+                        <img class="logo" src="../static/imagenes/logo.svg" alt="Logo de Cuenta Conmigo.">
+                    </a>
+                </li>
+
+                <li class="li">
+                    <a class="navbarlinks" href="/espacioPersonal">ESPACIO <br> PERSONAL</a>
+                </li>
+
+                <li class="li">
+                    <a class="navbarlinks" href="/actividades">ACTIVIDADES</a>
+                </li>
+
+                <li class="li">
+                    <a class="navbarlinks" href="/enfermedades">INFORMACIÓN SOBRE <br> ENFERMEDADES</a>
+                </li>
+
+                <li class="li">
+                    <a class="navbarlinks" href="/sobreCuentaConmigo">SOBRE <br>CUENTA CONMIGO</a>
+                </li>
+
+                <li class="li">
+                    <a href="/crear_usuario">
+                        <img class="icono" src="../static/imagenes/iconoUsuario48px.svg" alt="Icono usuario.">
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</div>
+
+
+<!--FORMULARIO -->
+
+<div class="grid-container" style="background-color:rgba(255, 0, 255, 0);">
+
+    <div class="grid-100">
+
+        <div class="grid-50 crear_tarjeta_de_humor">
+
+            <h2>Actualizar tarjeta de humor</h2>
+
+            <form action="" method="post" autocomplete="off">
+
+                <div class="form-group">
+                    <label>ID:<span>*</span>
+                        <div class="form-field">
+                            <input type="number" id="id_registro" name="id_registro"
+                                   value="{{request.form.id_registro }}" placeholder="Id_registro" size="40"
+                                   class="form-control" required="">
+                        </div>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>Fecha:<span>*</span>
+                        <div class="form-field">
+                            <input type="date" id="fecha_actual" name="fecha_actual"
+                                   value="{{request.form.fecha_actual }}" placeholder="Tipo" size="40"
+                                   class="form-control" required="">
+                        </div>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>Valor: <span>*</span></label>
+                    <div class="form-field">
+                        <input type="number" id="valor" name="valor" value="{{request.form.valor }}" placeholder="Valor"
+                               size="40" class="form-control" required="">
+                    </div>
+
+                </div>
+
+
+                <br>
+
+                <div class="form-group">
+                    <div class="form-field">
+                        <label>Promedio: </label>
+                        <input type="number" id="promedio" name="promedio" value="{{request.form.promedio }}"
+                               placeholder="promedio" size="40" class="form-control">
+                    </div>
+                </div>
+
+
+                <!--BOTON -->
+
+                <p class="textoFormulario">*CUENTA CONMIGO solo guarda datos para una experiencia mas personalizada,
+                    <br>
+                    ninguno de dichos datos seran utilizados fuera del sitio.</p>
+
+                <div class="form-group">
+                    <div>
+                        <input type="submit" value="Actualizar"
+                               class="btnSiguiente btnSiguiente-primary btnSiguiente-lg">
+                    </div>
+                </div>
+
+            </form>
+            {% if error %}
+            <p><strong>Error:</strong> {{ error }}</p>
+            {% endif %}
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+</html>

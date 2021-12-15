@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cuenta Conmigo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../static/css/unsemantic-grid-responsive.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/formulario.css">
+</head>
+
+<body>
+
+<!--FORMULARIO -->
+
+<div class="grid-container" style="background-color:rgba(255, 0, 255, 0);">
+
+    <div class="grid-100">
+
+        <div class="grid-50 leer_tabla">
+
+            <img class="logo" src="../static/imagenes/logo.svg" alt="Logo de Cuenta Conmigo.">
+
+            <h2>Leer Tabla</h2>
+
+            <form action="" method="post" autocomplete="off">
+
+                <div class="form-group">
+                    <label for="tablas">Tablas:</label>
+                    <br>
+                    <select name="tablas" id="tablas" value="{{request.form.tablas }}">
+                        <option value="usuarios">USUARIOS</option>
+                        <option value="actividades">ACTIVIDADES</option>
+                        <option value="tarjetas_de_humor">TARJETAS DE HUMOR</option>
+                        <option value="roles">ROLES</option>
+                    </select>
+                </div>
+
+                <!--BOTON -->
+
+                <p class="textoFormulario">*CUENTA CONMIGO solo guarda datos para una experiencia mas personalizada,
+                    <br>
+                    ninguno de dichos datos seran utilizados fuera del sitio.</p>
+
+                <div class="form-group">
+                    <div>
+                        <input type="submit" value="Leer" class="btnSiguiente btnSiguiente-primary btnSiguiente-lg">
+                    </div>
+                </div>
+
+            </form>
+            {% if error %}
+            <p><strong>Error:</strong> {{ error }}</p>
+            {% endif %}
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+</html>

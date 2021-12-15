@@ -1,0 +1,247 @@
+/* HTML Y CUERPO */
+
+
+html {
+    overflow-x: hidden;
+    background-image: url(../static/imagenes/fondo_4.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  
+    color: #0A889C;
+    line-height: 30px;
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: lighter;
+        
+  }
+
+.logo {
+    display: block;    
+    margin-right: auto;    
+    
+    width: 60%;
+}
+
+
+/* NAVEGADOR */
+
+.fondo-navegador {
+    background-color: rgb(255, 255, 255);
+    
+    width: auto;
+    border-radius: 0 0 10px 10px;
+    
+    position: fixed;
+    top: 0;
+    
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+.grid-menu ul {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 170px);
+    grid-gap: 10px;
+    justify-items: center;  
+
+    list-style: none;
+    margin-top: 10px;
+    
+    
+    
+    font-size: 10pt;
+    font-weight: 700;
+    line-height: 12pt;
+    
+
+    
+}
+
+a {
+    text-decoration: none;
+    color: #2d1026;
+}
+
+.fullWidth {
+    grid-column: 1 / 2;
+    justify-self: start;
+}
+
+.li {
+    margin-top: 10px;
+}
+
+.icono {
+    width: 90%;
+}
+
+
+
+
+
+
+/* CRUD */
+
+
+
+h3 {
+    
+    text-align: center;
+}
+
+
+.crud1 {
+    
+    height: 500px;
+    
+    margin: 150px auto 150px auto;
+
+    
+}
+
+.crud2 {
+    height: 500px;
+    
+    margin: 150px auto 150px auto;
+}
+
+.crud3 {
+    height: 500px;
+    
+    margin: 150px auto 150px auto;
+}
+
+.crud4 {
+    height: 500px;
+    
+    margin: 150px auto 150px auto;
+
+}
+
+
+
+
+
+.actividad1 {
+    background-color: #0A889C;
+    border-radius: 10px;
+    border-width: 0;
+    height: 70px;
+    width: 90%;
+
+    padding: 20px;
+    display: block;
+    margin: 20px auto 20px auto;
+
+    color: #2D1026;
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+.actividad1:hover {
+    background-color: #0fb0c9;
+    border-radius: 10px;
+    border-width: 0;
+    height: 70px;
+    width: 90%;
+
+    padding: 20px;
+    display: block;
+    margin: 20px auto 20px auto;
+
+    color: #2D1026;
+    font-size: medium;
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+.actividad2 {
+    background-color: #F29697;
+    border-radius: 10px;
+    border-width: 0;
+    height: 70px;
+    width: 90%;
+
+    padding: 20px;
+    display: block;
+    margin: 20px auto 20px auto;
+
+    color: #2D1026;
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+.actividad2:hover {
+    background-color: #f1787a;
+    border-radius: 10px;
+    border-width: 0;
+    height: 70px;
+    width: 90%;
+
+    padding: 20px;
+    display: block;
+    margin: 20px auto 20px auto;
+
+    color: #2D1026;
+    font-size: medium;
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+.actividad3 {
+    background-color: #F0C59B;
+    border-radius: 10px;
+    border-width: 0;
+    height: 70px;
+    width: 90%;
+
+    padding: 20px;
+    display: block;
+    margin: 20px auto 20px auto;
+
+    color: #2D1026;
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+.actividad3:hover {
+    background-color: #e6a15c;
+    border-radius: 10px;
+    border-width: 0;
+    height: 70px;
+    width: 90%;
+
+    padding: 20px;
+    display: block;
+    margin: 20px auto 20px auto;
+
+    color: #2D1026;
+    font-size: medium;
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+.actividad4 {
+    background-color: #2D1026;
+    border-radius: 10px;
+    border-width: 0;
+    height: 70px;
+    width: 90%;
+
+    padding: 20px;
+    display: block;
+    margin: 20px auto 20px auto;
+
+    color: #ffffff;
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+.actividad4:hover {
+    background-color: #50093f;
+    border-radius: 10px;
+    border-width: 0;
+    height: 70px;
+    width: 90%;
+
+    padding: 20px;
+    display: block;
+    margin: 20px auto 20px auto;
+
+    color: #ffffff;
+    font-size: medium;
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+

@@ -1,0 +1,142 @@
+/* HTML Y BODY */
+
+html {
+    overflow-x: hidden;
+    background-image: url(../static/imagenes/fondo_4.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  
+    color: #0A889C;
+    line-height: 30px;
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: lighter;
+        
+  }
+
+.logo {
+    display: block;    
+    margin-right: auto;    
+    
+    width: 60%;
+}
+
+/* NAVEGADOR */
+
+.fondo-navegador {
+    background-color: rgb(255, 255, 255);
+    
+    width: auto;
+    border-radius: 0 0 10px 10px;
+    
+    position: fixed;
+    top: 0;
+    
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+.grid-menu ul {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 170px);
+    grid-gap: 10px;
+    justify-items: center;  
+
+    list-style: none;
+    margin-top: 10px;
+    
+    
+    
+    font-size: 10pt;
+    font-weight: 700;
+    line-height: 12pt;
+    
+
+    
+}
+
+a {
+    text-decoration: none;
+    color: #2d1026;
+}
+
+.fullWidth {
+    grid-column: 1 / 2;
+    justify-self: start;
+}
+
+.li {
+    margin-top: 10px;
+}
+
+.icono {
+    width: 90%;
+}
+
+
+/* ACTIVIDAD */
+
+.actividad {
+    margin-top: 100px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+/* TEXTO ACTIVIDADES */
+
+
+.actividadTexto {
+    padding: 10px 30px 10px 30px;
+    text-align:start;
+    
+    
+}
+
+/* BOTONES ACTIVIDADES */
+
+.boton {
+    margin: 25px 0 50px 0;  
+    
+}
+
+ 
+.btnSiguiente {
+  
+    display: block;
+    margin: auto;
+    
+    border-radius: 10px;
+    
+    
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: bold;
+    font-size: 8pt;
+
+    width: 300px;
+    height: 200px;
+    
+  
+    box-shadow: 0 5px 8px 0 #00000046;
+    
+  
+  }
+  
+  .btnSiguiente.btnSiguiente-lg {
+    font-size: 16px;
+    
+  }
+  
+  .btnSiguiente.btnSiguiente-primary {
+    background: #F29697;
+    color: #ffffff;
+  }
+  
+  .btnSiguiente.btnSiguiente-primary:hover, .btnSiguiente.btnSiguiente-primary:active, .btnSiguiente.btnSiguiente-primary:focus {
+    background: #e08182;
+    color: #ffffff;
+  }
+

@@ -1,0 +1,142 @@
+/* HTML Y BODY */
+
+html {
+    overflow-x: hidden;
+    background-image: url(../static/imagenes/fondo_3.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  
+    color: #0A889C;
+    line-height: 30px;
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: lighter;
+        
+  }
+
+.logo {
+    display: block;    
+    margin-right: auto;    
+    
+    width: 60%;
+}
+
+
+/* NAVEGADOR */
+
+.fondo-navegador {
+    background-color: rgb(255, 255, 255);
+    
+    width: auto;
+    border-radius: 0 0 10px 10px;
+    
+    position: fixed;
+    top: 0;
+    
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+.grid-menu ul {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 170px);
+    grid-gap: 10px;
+    justify-items: center;  
+
+    list-style: none;
+    margin-top: 10px;
+    
+    
+    
+    font-size: 10pt;
+    font-weight: 700;
+    line-height: 12pt;
+    
+
+    
+}
+
+a {
+    text-decoration: none;
+    color: #2d1026;
+}
+
+.fullWidth {
+    grid-column: 1 / 2;
+    justify-self: start;
+}
+
+.li {
+    margin-top: 10px;
+}
+
+.icono {
+    width: 90%;
+}
+
+
+
+
+
+
+/* BOTON CERRAR SESION */
+
+.btnSiguiente {
+
+    float: right;
+    
+    border-radius: 20px;
+    border-width: 10px;
+    
+    border-color: #ffffff;
+    
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: bold;
+    font-size: 8pt;
+    width: 200px;
+  
+    box-shadow: 0 5px 8px 0 #00000046;
+    
+  
+}
+  
+.btnSiguiente.btnSiguiente-lg {
+    font-size: 16px;
+    line-height: 1;
+}
+  
+.btnSiguiente.btnSiguiente-primary {
+    background: #047BB1;
+    color: #ffffff;
+}
+  
+.btnSiguiente.btnSiguiente-primary:hover, .btnSiguiente.btnSiguiente-primary:active, .btnSiguiente.btnSiguiente-primary:focus {
+    background: #F29697;
+    color: #ffffff;
+}
+
+
+
+/* LANDING */
+
+
+.landing {
+    margin-top: 100px;
+    
+}
+
+h1 {
+    margin-top: 180px;
+    margin-left: 40px;
+}
+
+.ilu2 {
+  width: 70%;
+  display: block;
+  margin: 30px auto 30px auto;
+  
+  
+}

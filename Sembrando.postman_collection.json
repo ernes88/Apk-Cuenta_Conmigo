@@ -1,0 +1,773 @@
+{
+	"info": {
+		"_postman_id": "f1421bf9-1683-4f83-af9a-d1c4dd73e3bb",
+		"name": "Sembrando",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "bienvenida (OK)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear_usuario (OK)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "     {\r\n        \"userId\": 1,\r\n        \"userName\": \"Pedro\",\r\n        \"email\": \"manuel@gmail.com\",\r\n        \"password\": \"*********\",\r\n        \"birthday\": \"1998-25-16\",\r\n        \"gender\": \"Masculino\",\r\n        \"role\": \"administrator\"      \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:80/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "80",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener_usuarios (OK)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener_usuario (OK)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/users/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"users",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener_usuario_por_nombre_y_clave (OK)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/obtener_usuario_por_nombre_y_clave/Juan/cnfdsd3h",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"obtener_usuario_por_nombre_y_clave",
+								"Juan",
+								"cnfdsd3h"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar_usuario (OK)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "     {\r\n        \"nombre\": \"José\",\r\n        \"clave\": \"cnfdsd3h\",\r\n        \"fecha_nacimiento\": \"2005-10-27\",\r\n        \"genero\": \"Masculino\",\r\n        \"rol\": \"usuario\"      \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/modificar_usuario/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"modificar_usuario",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar_usuario (OK)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/borrar_usuario/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"borrar_usuario",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cantidad_de_usuarios (OK)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/cantidad_de_usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"cantidad_de_usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener_usuarios_por_campo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/obtener_usuarios_por_campo/genero/Masculino",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"obtener_usuarios_por_campo",
+								"genero",
+								"Masculino"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seleccionar_un_campo Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/cantidad_de_usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"cantidad_de_usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Actividades",
+			"item": [
+				{
+					"name": "crear_actividad",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "obtener_actividades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/obtener_actividades",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"obtener_actividades"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "crud",
+			"item": [
+				{
+					"name": "crear_registro_usuarios",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"nombre\": \"Alberto\",\r\n        \"clave\": \"voire789564gui\",\r\n        \"fecha_nacimiento\": \"25-04-90\",\r\n        \"genero\": \"Masculino\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/crear_registro/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"crear_registro",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear_registro_actividades",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"tipo\": \"Spinning\",\r\n        \"valor\": 12,\r\n        \"realizada\": false,\r\n        \"intensidad\": \"Alta\"\r\n    }\r\n    \r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/crear_registro/actividades",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"crear_registro",
+								"actividades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear_registro_roles",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id_roles\": 1,\r\n        \"rol\": \"Administrador\" \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/crear_registro/roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"crear_registro",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear_registro_tarjetas_de_humor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"fecha_actual\": \"2021-01-27\",\r\n        \"valor\": 10,\r\n        \"promedio\": 11.2    \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/crear_registro/tarjetas_de_humor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"crear_registro",
+								"tarjetas_de_humor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear_registro1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"nombre\": \"Pablo Milanes\",\r\n        \"clave\": \"cd3hfrsddseg4\",\r\n        \"fecha_nacimiento\": \"2015-10-27\",\r\n        \"genero\": \"Masculino\",\r\n        \"rol\": \"administrador\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/crear_registro1/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"crear_registro1",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "leer_tabla",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/leer_tabla/actividades/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"leer_tabla",
+								"actividades",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "leer_tabla_estableciendo_limite_de_registros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/leer_tabla/actividades/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"leer_tabla",
+								"actividades",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "leer_registro",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "borrar_registro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/borrar_registro/usuarios/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"borrar_registro",
+								"usuarios",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar_tabla",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/borrar_tabla/actividades",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"borrar_tabla",
+								"actividades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar_registro",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"ROL\": \"Usuario no registrado\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/modificar_registro/roles/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"modificar_registro",
+								"roles",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contar_registros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/leer_tabla/roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"leer_tabla",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contar_registros_filtrados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/leer_tabla/roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"leer_tabla",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ordenar_registros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/ordenar_registros/usuarios/nombre",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"ordenar_registros",
+								"usuarios",
+								"nombre"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ordenar_registros_filtrados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/ordenar_registros/usuarios/nombre/asc/ROL='administrador'",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"ordenar_registros",
+								"usuarios",
+								"nombre",
+								"asc",
+								"ROL='administrador'"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "     {\r\n        \"nombre\": \"Alberto Paz\",\r\n        \"clave\": \"voire784gui\"      \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sesiones",
+			"item": [
+				{
+					"name": "obtener_sesiones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/obtener_sesiones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"obtener_sesiones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validar_sesion_por_id/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5001/validar_sesion_por_id/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"validar_sesion_por_id",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "edX",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:80",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "function_for_ex2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:80/ex2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"ex2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "function_for_ex3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:80",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80"
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

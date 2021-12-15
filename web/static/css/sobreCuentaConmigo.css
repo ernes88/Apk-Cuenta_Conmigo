@@ -1,0 +1,98 @@
+/* HTML Y CUERPO */
+
+
+html {
+    overflow-x: hidden;
+    background-image: url(../static/imagenes/fondo_4.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  
+    color: #0A889C;
+    line-height: 30px;
+    font-family: 'Nunito', 'Rubik' , sans-serif;
+    font-weight: lighter;
+        
+  }
+
+.logo {
+    display: block;    
+    margin-right: auto;    
+    
+    width: 60%;
+}
+
+
+/* NAVEGADOR */
+
+.fondo-navegador {
+    background-color: rgb(255, 255, 255);
+    
+    width: auto;
+    border-radius: 0 0 10px 10px;
+    
+    position: fixed;
+    top: 0;
+    
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+.grid-menu ul {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 170px);
+    grid-gap: 10px;
+    justify-items: center;  
+
+    list-style: none;
+    margin-top: 10px;
+    
+    
+    
+    font-size: 10pt;
+    font-weight: 700;
+    line-height: 12pt;
+    
+
+    
+}
+
+a {
+    text-decoration: none;
+    color: #2d1026;
+}
+
+.fullWidth {
+    grid-column: 1 / 2;
+    justify-self: start;
+}
+
+.li {
+    margin-top: 10px;
+}
+
+.icono {
+    width: 90%;
+}
+
+
+/* NOSOTROS */
+
+.nosotros {
+    background-color: white;
+    border-radius: 10px;
+    display: block;
+    margin: 100px auto 100px auto;
+    padding: 40px 100px 40px 100px;
+    color: #2D1026;
+    box-shadow: 0 5px 8px 0 #00000046;
+}
+
+h1 {
+    font-weight: 900;
+    text-align: center;
+}
+
+
+
+
+
